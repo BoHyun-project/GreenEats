@@ -1,0 +1,460 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+body {
+    font-family: 'TheJamsil';
+    font-size: 15px;
+    line-height: 24px;
+    color: #000;
+    min-width: 1320px;
+}
+
+/* 탑 */
+#top ul {
+    width: 1320px;
+    margin: 10px auto;
+    display: -moz-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#top ul li a {
+    display: block;
+    color: #333;
+}
+
+#top ul li a:hover {
+    color: #ccc;
+}
+
+/* 헤더 */
+header {
+    position: relative;
+}
+
+.header_in {
+    width: 1320px;
+    margin: auto;
+    display: -moz-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header_in>ul {
+    display: -moz-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+}
+
+.header_in>ul>li {
+    width: 200px;
+    position: relative;
+}
+
+.header_in>ul>li>a {
+    display: block;
+    font-size: 30px;
+    font-family: 'Jalnan';
+    font-weight: bold;
+    text-align: center;
+    padding: 30px 0px 40px;
+}
+
+.header_in>ul>li:hover>a {
+    display: block;
+    color: #ec4410;
+    background-color: rgba(254, 102, 0, 0.3);
+    border-radius: 10px 10px 0 0;
+}
+
+/* 서브메뉴 */
+.sub_box {
+    width: 100%;
+    height: 128px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: rgba(254, 102, 0, 0.3);
+    display: none;
+    z-index: 98;
+}
+
+.sub {
+    width: 200px;
+    text-align: center;
+    position: absolute;
+    z-index: 99;
+    display: none;
+}
+
+.sub a {
+    display: block;
+    padding: 20px 0;
+    font-size: 20px;
+    font-weight: bold;
+    color: #222;
+}
+
+.sub a:hover {
+    color: #FE6500;
+}
+
+/* 서브메뉴 */
+
+/* 배너1 */
+.banner1 {
+    width: 100%;
+    height: 940px;
+    background: url(../images/brandstory/banner1.png) no-repeat top center;
+    background-size: cover;
+}
+
+.banner1 h1 {
+    font-family: 'TheJamsil';
+    text-align: center;
+    font-size: 100px;
+    line-height: 90px;
+    color: #1E2B11;
+    padding: calc(940px / 2) 0;
+}
+
+/* 배너1 */
+
+/* content1 */
+.box1 {
+    width: 1320px;
+    margin: 50px auto;
+    padding: 60px 0;
+    display: -moz-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 5px solid #000;
+}
+
+.text {
+    color: #1E2B11;
+}
+
+h2 {
+    font-size: 60px;
+    line-height: 60px;
+}
+
+p {
+    font-size: 25px;
+    line-height: 40px;
+    margin: 40px 0;
+}
+
+.box1 img {
+    display: block;
+}
+
+/* content1 */
+
+/* contents1-2 */
+.box2 {
+    width: 1320px;
+    margin: auto;
+    position: relative;
+    text-align: center;
+}
+
+.box2 h3 {
+    margin-top: 50px;
+    font-size: 30px;
+}
+
+.box2 p {
+    font-size: 20px;
+}
+
+.box2>img {
+    display: block;
+    margin: 150px auto;
+}
+
+/* 비건 소사이어티 */
+.mark1 {
+    position: absolute;
+    top: 19%;
+    left: -55px;
+}
+
+.mark1 img {
+    display: block;
+}
+
+.mark1_in {
+    background-color: #DDF2BF;
+    border-radius: 30px;
+    align-items: center;
+    padding: 20px 30px;
+    margin-right: 120px;
+}
+
+.left1 {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 2%;
+}
+
+/* 비건 소사이어티 */
+
+/* 한국 비건 인증원 */
+.mark2 {
+    position: absolute;
+    top: 40%;
+    right: 0;
+}
+
+.mark2_in {
+    background-color: #DDF2BF;
+    border-radius: 30px;
+    align-items: center;
+    padding: 20px 30px;
+}
+
+.right1 {
+    position: absolute;
+    top: 50%;
+    left: -27%;
+    z-index: 2;
+}
+
+/* 한국 비건 인증원 */
+
+/* EWG선정 안전한 비건식 */
+.mark3 {
+    position: absolute;
+    top: 61%;
+    left: -50px
+}
+
+.mark3_in {
+    background-color: #DDF2BF;
+    border-radius: 30px;
+    align-items: center;
+    padding: 20px 30px;
+}
+
+.left2 {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: -24%;
+}
+
+/* EWG선정 안전한 비건식 */
+
+/* EWG VERIFIED */
+.mark4 {
+    position: absolute;
+    top: 83%;
+    right: 0;
+}
+
+.mark4_in {
+    background-color: #DDF2BF;
+    border-radius: 30px;
+    align-items: center;
+    padding: 20px 30px;
+}
+
+.right2 {
+    position: absolute;
+    top: 50%;
+    left: -28%;
+    z-index: 2;
+}
+
+/* EWG VERIFIED */
+/* contents1-2 */
+
+/* contents2 */
+.banner2 {
+    width: 100%;
+    height: 940px;
+    background: url(../images/brandstory/banner2.png) no-repeat top center;
+    background-size: cover;
+    text-align: center;
+}
+
+.banner2 h1 {
+    font-size: 60px;
+    line-height: 80px;
+    padding-top: 300px;
+}
+
+.recycle {
+    width: 100%;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    justify-content: space-around;
+}
+
+.recycle ul {
+    width: 24%;
+    margin: 200px auto;
+    background-color: #6685B4;
+    text-align: center;
+    align-items: center;
+}
+
+.recycle ul li h4 {
+    font-size: 30px;
+    margin: 30px 0;
+}
+
+.recycle>ul>li {
+    display: block;
+    font-size: 18px;
+    font-weight: 100;
+    padding: 20px 0;
+    color: #fff;
+    line-height: 30px;
+}
+
+/* contents2 */
+
+/* contents3 */
+.banner3 {
+    width: 100%;
+    height: 940px;
+    background: url(../images/brandstory/banner3.png) no-repeat top center;
+    background-size: cover;
+    text-align: center;
+}
+
+.banner3 h1 {
+    font-size: 60px;
+    line-height: 80px;
+    padding-top: 300px;
+}
+
+.farm {
+    width: 100%;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    justify-content: space-around;
+}
+
+.farm ul {
+    width: 32%;
+    height: 698px;
+    margin: 200px auto;
+    background-color: #6685B4;
+    text-align: center;
+    align-items: center;
+}
+
+.farm>ul>li {
+    display: block;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 100;
+    line-height: 30px;
+}
+
+.farm>ul>li>img {
+    margin: 50px 0;
+}
+
+.farm>ul>li>h4 {
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+/* contents3 */
+
+/* 푸터 */
+footer{
+    width: 100%;
+    background-color: #7D553B;
+    background-size: cover;
+    border-top: 5px solid #000;
+    position: relative;
+}
+footer p{
+    color: #fff;
+    text-align: center;
+    font-size: 15px;
+    padding: 60px 0 50px 0;
+    margin: 0;
+    font-weight: 100;
+}
+.footer_in{
+    width: 1128px;
+    background-color:#E4E4E4 ;
+    border: 5px solid #000;
+    border-radius: 50px;
+    position: absolute;
+    top:-12%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.footer_in ul{
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    justify-content: space-around;
+}
+.footer_in ul li a{
+    display: block;
+    padding: 18px 0;
+    font-size: 15px;
+}
+
+.footer_in ul li a:hover{
+    text-decoration: underline;
+}
+/* 푸터 */
+
+/*  탑버튼 icon 꾸미기 */
+.top{
+    position:fixed; 
+    bottom:50px; 
+    right:50px; 
+    display:none;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 제이쿼리 CSS */

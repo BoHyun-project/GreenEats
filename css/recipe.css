@@ -1,0 +1,686 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+body {
+    font-family: 'TheJamsil';
+    font-size: 15px;
+    line-height: 24px;
+    color: #000;
+    min-width: 1320px;
+}
+
+/* 탑 */
+#top ul {
+    width: 1320px;
+    margin: 10px auto;
+    display: -moz-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#top ul li a {
+    display: block;
+    color: #333;
+}
+
+#top ul li a:hover {
+    color: #ccc;
+}
+
+/* 헤더 */
+header {
+    position: relative;
+}
+
+.header_in {
+    width: 1320px;
+    margin: auto;
+    display: -moz-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header_in>ul {
+    display: -moz-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+}
+
+.header_in>ul>li {
+    width: 200px;
+    position: relative;
+}
+
+.header_in>ul>li>a {
+    display: block;
+    font-size: 30px;
+    font-family: 'Jalnan';
+    font-weight: bold;
+    text-align: center;
+    padding: 30px 0px 40px;
+}
+
+.header_in>ul>li:hover>a {
+    display: block;
+    color: #ec4410;
+    background-color: rgba(254, 102, 0, 0.3);
+    border-radius: 10px 10px 0 0;
+}
+
+/* 서브메뉴 */
+.sub_box {
+    width: 100%;
+    height: 128px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: rgba(254, 102, 0, 0.3);
+    display: none;
+    z-index: 98;
+}
+
+.sub {
+    width: 200px;
+    text-align: center;
+    position: absolute;
+    z-index: 99;
+    display: none;
+}
+
+.sub a {
+    display: block;
+    padding: 20px 0;
+    font-size: 20px;
+    font-weight: bold;
+    color: #222;
+}
+
+.sub a:hover {
+    color: #FE6500;
+}
+
+.banner {
+    width: 100%;
+}
+
+h1 {
+    font-family: 'Jalnan';
+    text-align: center;
+    font-size: 40px;
+    margin-top: 50px;
+    line-height: 50px;
+}
+
+/* 추천요리 */
+.cookbox {
+    width: 1200px;
+    margin: 50px auto;
+    display: -moz-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: space-around;
+}
+
+.cookbox ul {
+    text-align: center;
+}
+
+.cookbox ul img {
+    display: block;
+    transition: all 1s;
+    
+}
+
+.cookbox ul:hover img{
+    transform: scale(1.2,1.2);
+}
+
+.cookbox ul .img{
+    overflow: hidden;
+    border: 5px solid #412614;
+    border-radius: 30px;
+    margin-bottom: 20px;
+}
+
+.cookbox ul li a {
+    font-family: 'Binggrae';
+    font-weight: 500;
+    line-height: 28px;
+}
+
+.ps:hover {
+    font-weight: bold;
+}
+
+.icon1 {
+    text-align: center;
+    display: inline-block;
+    padding: 0 30px;
+    background: url(../images/recipe/icon1.png) no-repeat 2% 50%;
+    background-size: 20px;
+}
+
+.icon1:hover {
+    background: url(../images/recipe/icon1-1.png) no-repeat 2% 50%;
+    background-size: 20px;
+}
+
+.icon2 {
+    text-align: center;
+    display: inline-block;
+    padding: 0 30px;
+    background: url(../images/recipe/icon2.png) no-repeat 2% 50%;
+    background-size: 20px;
+}
+
+.icon, .icon2{
+    margin-top: 10px;
+}
+
+.icon2:hover {
+    background: url(../images/recipe/icon2-1.png) no-repeat 2% 50%;
+    background-size: 20px;
+}
+/* 추천요리 */
+
+/* 레시피 */
+.menubox{
+    width: 1200px;
+    margin:80px auto;
+    position: relative;
+}
+
+.menubox h1{
+    margin-top: 90px;
+}
+
+
+.menubox_in{
+display: -moz-box;
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+justify-content: space-between;
+margin-top: 70px;
+text-align: center;
+}
+
+.menubox_in ul li a img{
+    border: 5px solid #000;
+    border-radius: 50%;
+    transition: all 1s;
+    margin-bottom: 20px;
+}
+
+.menubox_in ul li:hover img{
+    transform: scale(1.2,1.2);
+}
+
+/* 마우스포인터 */
+.cookmenu1 a:hover, .cookmenu1, #menu1, #menu1 .text a:hover{
+    cursor: url(../images/recipe/menu1_mouse-8109164.png), auto;
+}
+.cookmenu2 a:hover, .cookmenu2, #menu2,  #menu2 .text a:hover{
+    cursor: url(../images/recipe/mouse_pink.png), auto;
+}
+.cookmenu3 a:hover, .cookmenu3, #menu3,  #menu3 .text a:hover{
+    cursor: url(../images/recipe/mouse_green.png), auto;
+}
+.cookmenu4 a:hover, .cookmenu4, #menu4, #menu4 .text a:hover{
+    cursor: url(../images/recipe/mouse_purple.png), auto;
+}
+/* 마우스포인터 */
+
+/* 레시피 팝업 */
+#menu1, #menu2, #menu3, #menu4{
+    width: 100%;
+    position: absolute;
+    left: 0;
+}
+
+.popup2, .popup3, .popup4{
+    display: none;
+}
+
+#menu1>div, #menu2>div, #menu3>div, #menu4>div{
+    width: 1200px;
+    margin: auto;
+}
+
+/* 레시피소개 & 코멘트 */
+#menu1 .recipe{
+    width: 1000px;
+    height: 400px;
+    margin: auto;
+    margin-top: 80px;
+    background:url(../images/recipe/menu1.png) no-repeat top left #FFF5DA;
+    background-size: 460px;
+    border: 5px solid #000;
+    border-radius: 40px 0px 0px 40px;
+}
+
+#menu2 .recipe{
+    width: 1000px;
+    height: 400px;
+    margin: auto;
+    margin-top: 80px;
+    background:url(../images/recipe/menu2.png) no-repeat top left #FFF5DA;
+    background-size: 460px;
+    border: 5px solid #000;
+    border-radius: 40px 0px 0px 40px;
+}
+
+#menu3 .recipe{
+    width: 1000px;
+    height: 400px;
+    margin: auto;
+    margin-top: 80px;
+    background:url(../images/recipe/menu3.png) no-repeat top left #FFF5DA;
+    background-size: 460px;
+    border: 5px solid #000;
+    border-radius: 40px 0px 0px 40px;
+}
+
+#menu4 .recipe{
+    width: 1000px;
+    height: 400px;
+    margin: auto;
+    margin-top: 80px;
+    background:url(../images/recipe/menu4.png) no-repeat top left #FFF5DA;
+    background-size: 460px;
+    border: 5px solid #000;
+    border-radius: 40px 0px 0px 40px;
+}
+
+#menu1 .text ,#menu2 .text ,#menu3 .text ,#menu4 .text{
+    margin-left: 52%;
+    margin-top: 5%;
+    font-family: 'Binggrae';
+}
+#menu1 .text h4 ,#menu2 .text h4 ,#menu3 .text h4 ,#menu4 .text h4{
+    margin-bottom: 5px;
+    font-family: 'TheJamsil';
+}
+
+#menu1 .text h2 ,#menu2 .text h2 ,#menu3.text h2 ,#menu4 .text h2{
+    margin-bottom: 20px;
+    font-family: 'TheJamsil';
+    color:#092C0E;
+    
+}
+
+#menu1 .text a ,#menu2 .text a ,#menu3 .text a ,#menu4 .text a{
+    display: inline-block;
+    margin-left: 30%;
+    margin-top: 30px;
+    border: 3px solid #000;
+    border-radius: 15px;
+    padding: 5px 30px;
+    font-family: 'TheJamsil';
+    font-weight: bold;
+    background-color: #fff;
+    color:#092C0E;
+}
+#menu1 .text a:hover ,#menu2 .text a:hover ,#menu3 .text a:hover ,#menu4 .text a:hover{
+    background-color: #000;
+    color: #fff;
+}
+
+#menu1 .comentbox ,#menu2 .comentbox ,#menu3 .comentbox ,#menu4 .comentbox{
+    width: 1000px;
+    display: -moz-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+/* 시금치 프리타타 코멘트 */
+#menu1 .coment1{
+    width: 40%;
+    height: 300px;
+    background: url(../images/recipe/left_top.png) no-repeat top left;
+    background-size: 400px;
+    margin-top: 50px;
+}
+#menu1 .coment1 p{
+    margin-top: 10px;
+    margin-left: 20px;
+ padding: 20px 20px;
+ font-size: 20px;
+ line-height: 30px;
+}
+
+#menu1 .coment2{
+    width: 40%;
+    height: 300px;
+    background: url(../images/recipe/right_top.png) no-repeat top left;
+    background-size: 400px;
+    margin-top: 50px;
+}
+
+#menu1 .coment2 p{
+    margin-top: 10px;
+    margin-left: 20px;
+ padding: 20px 20px;
+ font-size: 20px;
+ line-height: 30px;
+}
+
+#menu1 .coment3{
+    width: 40%;
+    height: 300px;
+    background: url(../images/recipe/left_bottom.png) no-repeat top left;
+    background-size: 400px;
+    margin-top: 50px; 
+}
+
+#menu1 .coment3 p{
+    margin-top: 75px;
+    margin-left: 20px;
+ padding: 20px 20px;
+ font-size: 20px;
+ line-height: 30px;
+}
+
+#menu1 .coment4{
+    width: 40%;
+    height: 300px;
+    background: url(../images/recipe/rhight_bottom.png) no-repeat top left;
+    background-size: 400px;
+    margin-top: 50px; 
+}
+
+#menu1 .coment4 p{
+    margin-top: 75px;
+    margin-left: 20px;
+ padding: 20px 20px;
+ font-size: 20px;
+ line-height: 30px;
+}
+/* 시금치프리타타 코멘트 */
+
+/* 토마토마리네이드 코멘트 */
+#menu2 .coment1{
+    width: 40%;
+    height: 300px;
+    background: url(../images/recipe/lefttop_pink.png) no-repeat top left;
+    background-size: 400px;
+    margin-top: 50px;
+}
+#menu2 .coment1 p{
+    margin-top: 10px;
+    margin-left: 20px;
+ padding: 20px 20px;
+ font-size: 20px;
+ line-height: 30px;
+}
+
+#menu2 .coment2{
+    width: 40%;
+    height: 300px;
+    background: url(../images/recipe/righttop_pink.png) no-repeat top left;
+    background-size: 400px;
+    margin-top: 50px;
+}
+
+#menu2 .coment2 p{
+    margin-top: 10px;
+    margin-left: 20px;
+ padding: 20px 20px;
+ font-size: 20px;
+ line-height: 30px;
+}
+
+#menu2 .coment3{
+    width: 40%;
+    height: 300px;
+    background: url(../images/recipe/leftbottom_pink.png) no-repeat top left;
+    background-size: 400px;
+    margin-top: 50px; 
+}
+
+#menu2 .coment3 p{
+    margin-top: 75px;
+    margin-left: 20px;
+ padding: 20px 20px;
+ font-size: 20px;
+ line-height: 30px;
+}
+
+#menu2 .coment4{
+    width: 40%;
+    height: 300px;
+    background: url(../images/recipe/rightbottom_pink.png) no-repeat top left;
+    background-size: 400px;
+    margin-top: 50px; 
+}
+
+#menu2 .coment4 p{
+    margin-top: 75px;
+    margin-left: 20px;
+ padding: 20px 20px;
+ font-size: 20px;
+ line-height: 30px;
+}
+/* 토마토마리네이드 코멘트 */
+
+/* 케일강된장밥 코멘트 */
+#menu3 .coment1{
+    width: 40%;
+    height: 300px;
+    background: url(../images/recipe/green_lefttop.png) no-repeat top left;
+    background-size: 400px;
+    margin-top: 50px;
+}
+#menu3 .coment1 p{
+    margin-top: 10px;
+    margin-left: 20px;
+ padding: 20px 20px;
+ font-size: 20px;
+ line-height: 30px;
+}
+
+#menu3 .coment2{
+    width: 40%;
+    height: 300px;
+    background: url(../images/recipe/green_righttop.png) no-repeat top left;
+    background-size: 400px;
+    margin-top: 50px;
+}
+
+#menu3 .coment2 p{
+    margin-top: 10px;
+    margin-left: 20px;
+ padding: 20px 20px;
+ font-size: 20px;
+ line-height: 30px;
+}
+
+#menu3 .coment3{
+    width: 40%;
+    height: 300px;
+    background: url(../images/recipe/green_leftbottom.png) no-repeat top left;
+    background-size: 400px;
+    margin-top: 50px; 
+}
+
+#menu3 .coment3 p{
+    margin-top: 75px;
+    margin-left: 20px;
+ padding: 20px 20px;
+ font-size: 20px;
+ line-height: 30px;
+}
+
+#menu3 .coment4{
+    width: 40%;
+    height: 300px;
+    background: url(../images/recipe/green_rightbottom.png) no-repeat top left;
+    background-size: 400px;
+    margin-top: 50px; 
+}
+
+#menu3 .coment4 p{
+    margin-top: 75px;
+    margin-left: 20px;
+ padding: 20px 20px;
+ font-size: 20px;
+ line-height: 30px;
+}
+/* 케일강된장밥 코멘트 */
+
+/* 두부덮밥 코멘트 */
+#menu4 .coment1{
+    width: 40%;
+    height: 300px;
+    background: url(../images/recipe/purple_lefttop.png) no-repeat top left;
+    background-size: 400px;
+    margin-top: 50px;
+}
+#menu4 .coment1 p{
+    margin-left: 20px;
+ padding: 12px 20px;
+ font-size: 20px;
+ line-height: 30px;
+}
+
+#menu4 .coment2{
+    width: 40%;
+    height: 300px;
+    background: url(../images/recipe/purple_righttop.png) no-repeat top left;
+    background-size: 400px;
+    margin-top: 50px;
+}
+
+#menu4 .coment2 p{
+    margin-top: 10px;
+    margin-left: 20px;
+ padding: 10px 20px;
+ font-size: 20px;
+ line-height: 30px;
+}
+
+#menu4 .coment3{
+    width: 40%;
+    height: 300px;
+    background: url(../images/recipe/purple_leftbottom.png) no-repeat top left;
+    background-size: 400px;
+    margin-top: 50px; 
+}
+
+#menu4 .coment3 p{
+    margin-top: 55px;
+    margin-left: 20px;
+ padding: 20px 20px;
+ font-size: 20px;
+ line-height: 30px;
+}
+
+#menu4 .coment4{
+    width: 40%;
+    height: 300px;
+    background: url(../images/recipe/purple_rhghtbottom.png) no-repeat top left;
+    background-size: 400px;
+    margin-top: 50px; 
+}
+
+#menu4 .coment4 p{
+    margin-top: 75px;
+    margin-left: 20px;
+ padding: 20px 20px;
+ font-size: 20px;
+ line-height: 30px;
+}
+/* 두부덮밥 코멘트 */
+
+
+
+
+
+/* 레시피소개 & 코멘트 */
+
+
+.man{
+    display: block;
+    position: absolute;
+    top:60%;
+    left: 44%;
+}
+/* 레시피 */
+
+/* 푸터 */
+footer{
+    margin-top: 1300px;
+    width: 100%;
+    background-color: #7D553B;
+    border-top: 5px solid #000;
+    position: relative;
+}
+footer p{
+    color: #fff;
+    text-align: center;
+    font-size: 15px;
+    padding: 60px 0 50px 0;
+    margin: 0;
+    font-weight: 100;
+}
+.footer_in{
+    width: 1128px;
+    margin: auto;
+    background-color:#E4E4E4 ;
+    border: 5px solid #000;
+    border-radius: 50px;
+    position: absolute;
+    top:-12%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.footer_in ul{
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    justify-content: space-around;
+}
+.footer_in> ul> li> a{
+    display: block;
+    padding: 18px 0;
+    font-size: 15px;
+}
+
+.footer_in ul li a:hover{
+    text-decoration: underline;
+}
+/* 푸터 */
+
+
+/*  탑버튼 icon 꾸미기 */
+.top{
+    position:fixed; 
+    bottom:50px; 
+    right:50px; 
+    display:none;
+  }
+/*  탑버튼 icon 꾸미기 */
