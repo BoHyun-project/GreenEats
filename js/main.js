@@ -18,15 +18,6 @@ $(function () {
   });
 });
 
-//    숫자 올라가는 효과
-
-
-$(function () {
-  $('.counter').counterUp({
-    delay: 10,
-    time: 1500
-  });
-});
 
 // sns 슬라이드
 $(function () {
@@ -49,6 +40,23 @@ $(function () {
   });
 });
 
+// 서브
+$(function () {
+  $('.header_in li').mouseenter(function () {
+    $('.sub_box, .sub').stop().slideDown();
+  });
+  $('.header_in li').mouseleave(function () {
+    $('.sub_box, .sub').stop().slideUp();
+  });
+});
+
+//   인포박스 나타내기
+$(function () {
+  $('.locate').click(function () {
+    $('.infobox').fadeToggle();
+  });
+});
+
 // 탑 버튼
 $(window).scroll(function () {
   var height = $(window).scrollTop();
@@ -65,19 +73,10 @@ $(function () {
   });
 });
 
-// 서브
+// 숫자 올라가는 효과
 $(function () {
-  $('.header_in li').mouseenter(function () {
-    $('.sub_box, .sub').stop().slideDown();
-  });
-  $('.header_in li').mouseleave(function () {
-    $('.sub_box, .sub').stop().slideUp();
-  });
-});
-
-//   인포박스 나타내기
-$(function () {
-  $('.locate').click(function () {
-    $('.infobox').fadeToggle();
+  $('.counter').counterUp({
+    delay: 10,
+    time: 1500
   });
 });
