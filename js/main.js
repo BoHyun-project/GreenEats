@@ -39,37 +39,3 @@ $(function () {
     swiper.autoplay.start();
   });
 });
-
-// 서브
-$(function () {
-  $('.header_in li').mouseenter(function () {
-    $('.sub_box, .sub').stop().slideDown();
-  });
-  $('.header_in li').mouseleave(function () {
-    $('.sub_box, .sub').stop().slideUp();
-  });
-});
-
-//   인포박스 나타내기
-$(function () {
-  $('.locate').click(function () {
-    $('.infobox').fadeToggle();
-  });
-});
-
-// 탑 버튼
-$(window).scroll(function () {
-  var height = $(window).scrollTop();
-  if (height > 700) {
-    $('.top').fadeIn();
-  } else {
-    $('.top').fadeOut();
-  }
-});
-$(function () {
-  $('.top').click(function () {
-    $('html, body').animate({ scrollTop: 0 }, 400);
-    return false;
-  });
-});
-
