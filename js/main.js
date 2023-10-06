@@ -73,10 +73,3 @@ $(function () {
   });
 });
 
-// 숫자 올라가는 효과
-$(function () {
-  $('.counter').counterUp({
-    delay: 10,
-    time: 1500
-  });
-});
