@@ -135,8 +135,10 @@ input {
     background: url(../images/restaurant/saerch.png) no-repeat 90% 50%;
     background-size: 25px 25px;
     padding: 10px 20px 10px 0;
-    margin-left: 68%;
+    margin-right: 70px;
     margin-top: 30px;
+    display: block;
+    float: right;
 }
 
 /* 서치 */
@@ -147,6 +149,7 @@ input {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    clear: both;
 }
 
 /* 식당정보 전체박스 */
